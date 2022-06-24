@@ -28,9 +28,7 @@ namespace ObjectOrientedProgramming.Encapsulation
 
         //internal method to validate details of employee
         private bool ValidateEmployeeDetails(string designation, double salary)
-        {
-            return true;
-        }
+            => true;
 
         //internal method to show updated details 
         private void ShowUpdatedEmployeeDetails()

@@ -8,7 +8,7 @@ namespace ObjectOrientedProgramming.Polymorphism
         private const double _co2FactorLitreWise = 12;
         public new void CarbonFootPrint(double fuelComsumedInLitres)
         {
-            Console.WriteLine(fuelComsumedInLitres * _co2FactorLitreWise);
+            Console.WriteLine($"CarbonFootPrint of Van {fuelComsumedInLitres * _co2FactorLitreWise}");
         }
     }
 }
