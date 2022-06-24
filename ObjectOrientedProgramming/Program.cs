@@ -17,8 +17,7 @@ namespace ObjectOrientedProgramming
             Employee sam = new("Sam", 12000, "Senior Software Engineer");
             john.EmployeeDetails();
             sam.EmployeeDetails();
-            john.UpdateEmployeeDetails("Senior Software Engineer", 12000);
-            john.EmployeeDetails();
+            john.UpdateEmployeeDetails("Senior Software Engineer", 15000);
 
             //Inheritance Example
             Console.WriteLine("\nExample of Inheritance");
@@ -41,8 +40,8 @@ namespace ObjectOrientedProgramming
             ApplicationUser abstractMember = new Member();
             if (abstractAdmin.RegisterUser("Add new user here")) Console.WriteLine("Admin Registered Successfully");
             if (!string.IsNullOrEmpty(abstractAdmin.LoginUser("Username", "Password"))) Console.WriteLine("Admin Logged In Successfully");
-            if (abstractMember.RegisterUser("Add new user here")) Console.WriteLine("Member Logged In Successfully");
-            if (!string.IsNullOrEmpty(abstractMember.LoginUser("Username", "Password"))) Console.WriteLine("Admin Logged In Successfully");
+            if (abstractMember.RegisterUser("Add new user here")) Console.WriteLine("Member Registered In Successfully");
+            if (!string.IsNullOrEmpty(abstractMember.LoginUser("Username", "Password"))) Console.WriteLine("Member Logged In Successfully");
 
 
             //Abstraction Using Interfaces
@@ -51,8 +50,8 @@ namespace ObjectOrientedProgramming
             IApplicationUser member = new Member();
             if(admin.RegisterUser("Add new user here")) Console.WriteLine("Admin Registered Successfully");
             if(!string.IsNullOrEmpty(admin.LoginUser("Username", "Password"))) Console.WriteLine("Admin Logged In Successfully");
-            if(member.RegisterUser("Add new user here")) Console.WriteLine("Member Logged In Successfully");
-            if(!string.IsNullOrEmpty(member.LoginUser("Username", "Password"))) Console.WriteLine("Admin Logged In Successfully");
+            if(member.RegisterUser("Add new user here")) Console.WriteLine("Member Registered In Successfully");
+            if(!string.IsNullOrEmpty(member.LoginUser("Username", "Password"))) Console.WriteLine("Member Logged In Successfully");
 
             //Static or Compile-Time Polymorphism
             Console.WriteLine("\nExample of Static or Compile-Time Polymorphism ");
